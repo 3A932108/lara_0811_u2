@@ -29,3 +29,12 @@ Route::get('hello/{name?}', function($name='Everybody') {
 Route::get('r3', function() {
     return redirect('r2');
 });
+
+Route::get('dashboard',function(){
+    return'dashboard';
+});
+Route::group(['prefix'=>'admin'],function(){
+    Route::get('dashboard',function(){
+        return'admin dashboard';
+    });
+});
