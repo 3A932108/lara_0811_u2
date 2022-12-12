@@ -59,6 +59,9 @@
                                 </div>
                             </div>
                         </div>
+                        <a href="{{ route('hello.index') }}">Hello</a>
+                        <a href = "{{route('hello.index', ['name'=>'tom'])}}">Hello2</a>
+                        <a href = "/hello/tom">Hello3</a>
 
                         <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
                             <div class="flex items-center">
